@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> <!-- codificação de caracteres-->
+    <meta name="description" content="Conteúdos sobre HTML">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Web, Site">
+    <meta name="author" content="Anna Tibellio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contrução de Website</title> 
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+        <header class="flex-container" id="topo"><img id="logo" src="imagem/logo_ub.png" alt="Logo da Universidade Brasil azul com o fundo transparente"></header>
+        <nav class="flex-container">
+            <ul id="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="comentarios.html">Comentários</a></li>
+                <li><a href="layout.html">Layout</a></li>
+                <li><a href="#">Listas</a>
+                <ul>
+                    <li><a href="ol.html">Lista Ordenada</a></li>
+                    <li><a href="ul.html">Lista Não Ordenada</a></li>
+                </ul>
+                </li>
+                <li><a href="metadados.html">Metadados</a></li>
+                <li><a href="contato.html">Contatos</a></li>
+            </ul>
+        </nav>
+    
+    <header class="flex-container" id="topo"><img id="logo" src="imagem/logo_ub.png" alt="Logo da Universidade Brasil azul com o fundo transparente"></header>
+    <main class="flex-container" id="conteudo">
+    <section>
+        <h1>CONTATO</h1>
+        <form action="" method="post">
+           <fieldset>
+               <legend>Dados pessoais</legend>
+               <label for="name" class="required">Nome</label>
+               <input type="text" name="nome" id="nome" placeholder="Digite seu nome
+               completo" required>
+               <label for="cpf" class="required">CPF</label>
+               <input type="text" name="cpf" id="cpf" placeholder="Digite seu CPF" required>
+               <label for="data"class="required">Data de Nascimento</label>
+               <input type="date" data="data" id="data" required>
+               <label for="email" class="required">E-mail</label>
+               <input type="email" name="email" id="email" placeholder="Digite
+               seu email" required> 
+               <label for="telefone">Telefone</label>
+               <input type="text" name="telefone" id="telefone" placeholder="Digite
+               seu telefone">
+            </fieldset>
+            <fieldset>
+                <legend>Endereço</legend>
+                <label for="cep" class="required">CEP</label>
+                <input type="text" name="cep" id="cep" placeholder="Digite seu cep" required>
+                <label for="rua">Rua</label>
+                <input type="text" name="rua" id="rua" disabled>
+                <label for="numero" class="required">Número</label>
+                <input type="text" name="numero" id="numero" required>
+                <label for="complemento">Complemento</label>
+                <input type="text" name="complemento" id="complemento" disabled>
+                <label for="bairro">Bairro</label>
+                <input type="text" name="bairro" id="bairro" disabled>
+                <label for="cidade">Cidade</label>
+                <input type="text" name="cidade" id="cidade" disabled>
+                <label for="estado">Estado</label>
+                <input type="text" name="estado" id="estado" disabled>
+            </fieldset>
+            <fieldset>
+                <legend>Mensagem</legend>
+                <label for="assunto" class="required">Assunto</label>
+                <input type="text" name="assunto" id="assunto" placeholder="Digite o assunto da mensagem" required>
+                <label for="mensagem" class="required">Mensagem</label>
+                <input type="text" name="mensagem" id="mensagem" placeholder="Digite a sua mensagem aqui..." required>             
+            </fieldset>
+        </form>
+    </section>
+    </main>
+    <footer class="flex-container" id="rodape">
+    <o>Todos os direitos reservados &copy; 2026</o>
+    </footer>
+</body>
+</html>
