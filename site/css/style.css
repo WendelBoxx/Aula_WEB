@@ -149,4 +149,30 @@ video {
         display: block;
         margin: 2%;
     }
+    #bt_menu:checked ~ #menu {
+        display: block;
+        width: 100%;
+    }
+    #menu li {
+        padding: 3% 1px;
+    }
+    #menu li ul {
+        position: static;
+    }
+    #menu li ul li {
+        position: relative;
+        display: block;
+    }
+    #logo {
+        width: 60%;
+        height: auto;
+    }
+    #imgIndex {
+        width: 60%;
+        height: auto;
+    }
+    #imgConteudo {
+        width: 60%;
+        height: auto;
+    }
 }
