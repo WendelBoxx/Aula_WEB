@@ -4,18 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="exercicio2.js"></script>
+    <style>
+        #oculta {
+            display: none;
+        }
+    </style>
 </head>
 <body>
-    <form nome="contato" id="contato">
-        <select name="assunto" id="assunto">
+    <form nome="contato" id="contato" onsubmit="return validar()">
+        <label for="nome" name="nome">Nome:</label>
+        <input type="text" id="nome"><br>
+        <label for="email" name="email">E-mail:</label>
+        <input type="text" id="email"><br>
+        <label for="assunto" name="assunto">Assunto:</label>
+        <select name="assunto" id="assunto" onchange="verificarOpcao()">
+            <option value="" selected>Selecione uma opção</option>
             <option value="duvida">Dúvida</option>
             <option value="sugestao">Sugestão</option>
             <option value="reclamacao">Reclamação</option>
             <option value="outro">Outro</option>
-        </select>
-        <br>
-        <label for="mensagem">Mensagem</label>
+        </select><br>
+        <div id="oculta">
+            <label for="qual">Qual:</label>
+            <input type="text" name="qual" id="qual">
+        </div>
+        <label for="mensagem">Mensagem:</label><br>
         <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea><br>
+        <button type="submit">Enviar</button>
     </form>
 </body>
 </html>
